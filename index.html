@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Chivería de Yaguate</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  
+<header class="header-fijo">
+  <img src="imagenes/Logo de la chiveria a.png" alt="Logo La Chivería" class="logo-superior">
+  <nav>
+  <ul class="nav-links">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#productos">Productos</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="#reserva-flotante" class="btn-reserva">Reservar</a></li>
+  </ul>
+</nav>
+</header>
+
+  <main>
+    <section id="hero">
+      <h1>Encuentra la mejor comida del sur</h1>
+      <p>Ecoturístico y familiar</p>
+      <button class="cta-button" onclick="document.getElementById('productos').scrollIntoView({behavior: 'smooth'})">Productos</button>
+    </section>
+
+    <section id="inicio" class="historia-section">
+      <div class="historia-contenido">
+        <h1>Historia de Yaguate & La Chivería</h1>
+        <div class="La Chiveria">
+          <h2>🗺️ Yaguate: raíces y desarrollo</h2>
+          <p> La Chivería de Yaguate es un restaurante y centro ecoturístico en San Cristóbal, República Dominicana, conocido por su enfoque en la gastronomía local, la sostenibilidad y el apoyo a la comunidad. Inicialmente, se concibió como un lugar para la crianza y venta de chivos y tilapia, pero durante la pandemia se transformó en un restaurante al aire libre que combina la naturaleza con la comida tradicional dominicana. 
+
+            La historia de La Chivería se remonta a Don Víctor Espinal, quien, tras enfrentar un ciclón, encontró la fuerza para construir este proyecto familiar junto a sus hijos. El restaurante se destaca por su concepto ecológico y gastronómico, ofreciendo platos a base de chivo y tilapia, con énfasis en sabores locales y técnicas culinarias transmitidas de generación en generación. Además, La Chivería se ha convertido en un motor de cambio positivo para la comunidad de Yaguate, generando empleos y promoviendo el turismo local. </p>
+        </div>
+        <div class="historia-bloque">
+          <h2>🍴 restaurante</h2>
+
+          <p> Entre los platos más populares se encuentran el chivo guisado en sus diferentes versiones (criollo, caribeño y al vino tinto), las croquetas de chivo, el risotto de chivo, la tilapia frita y al coco, y el mofongo de chivo. También ofrecen parrilladas, cortes de carne, y postres tradicionales de la región sur. 
+            
+            La Chivería no solo es un lugar para disfrutar de la gastronomía, sino también para conectar con la naturaleza y la cultura dominicana, promoviendo la sostenibilidad y el desarrollo de Yaguate.</p>
+        </div>
+      </div>
+    </section>
+
+<section id="mision-vision-valores" class="bloque-mvv">
+  <div class="contenedor-mvv">
+    <div class="columna-mvv">
+      <h2>Misión</h2>
+      <p>
+        Ofrecer una experiencia gastronómica auténtica basada en la carne de chivo y tilapia, aprovechando productos locales y recetas dominicanas tradicionales, mientras se genera un impacto socioeconómico positivo en la comunidad de Yaguate.
+      </p>
+    </div>
+    <div class="columna-mvv">
+      <h2>Visión</h2>
+      <p>
+        Convertirnos en un referente de ecoturismo y sostenibilidad en San Cristóbal y toda la República Dominicana, reconociendo y potencializando la belleza natural del sur del país, fomentando el turismo interno y fortaleciendo la economía regional a través del empleo local, la promoción cultural y la colaboración con artesanos y proveedores de la comunidad.
+      </p>
+    </div>
+    <div class="columna-mvv">
+      <h2>Valores</h2>
+      <ul>
+        <li>Ecoturismo</li>
+        <li>Apoyo a la economía local</li>
+        <li>Calidad y servicio</li>
+        <li>Ambiente familiar</li>
+        <li>Educación ambiental</li>
+        <li>Innovación</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section id="productos" class="productos-section">
+  <h2>🍽️ Productos Destacados</h2>
+  <div class="productos-grid">
+
+    <div class="producto-card">
+      <img src="imagenes/chivo caribeño .jpeg" alt="Chivo caribeño">
+      <h3>Chivo caribeño</h3>
+      <p class="precio">RD $1,230.00</p>
+      <p>Chivo picante con papas y trozos de maíz.</p>
+      <button class="agregar-carrito" data-nombre="Chivo caribeño" data-precio="1230">Agregar al carrito</button>
+    </div>
+
+    <div class="producto-card">
+      <img src="imagenes/mofongo de chivo.jpeg" alt="Mofongo de chivo">
+      <h3>Chivirifongo</h3>
+      <p class="precio">RD $1,420.00</p>
+      <p>Plátano majado con chicharrón y chivo guisado.</p>
+      <button class="agregar-carrito" data-nombre="Chivirifongo" data-precio="1420">Agregar al carrito</button>
+    </div>
+
+    <div class="producto-card">
+      <img src="imagenes/croquetas de chivo nuevas .jpeg" alt="Croquetas de chivo">
+      <h3>Croquetas de chivo</h3>
+      <p class="precio">RD $630.00</p>
+      <p>4 croquetas acompañadas de salsa de chivo y parmesano.</p>
+      <button class="agregar-carrito" data-nombre="Croquetas de chivo" data-precio="630">Agregar al carrito</button>
+    </div>
+
+    <div class="producto-card">
+      <img src="imagenes/Nachos Chiviricos.jpeg" alt="Nachos de chivo">
+      <h3>Chivirinachos</h3>
+      <p class="precio">RD $760.00</p>
+      <p>Chivo desmenuzado con tortillas, crema agria, guacamole y pico de gallo.</p>
+      <button class="agregar-carrito" data-nombre="Chivirinachos" data-precio="760">Agregar al carrito</button>
+    </div>
+
+    <div class="producto-card">
+      <img src="imagenes/tacos de pescado 2 .jpg" alt="Tacos de Pescado">
+      <h3>Tacos de pescado</h3>
+      <p class="precio">RD $870.00</p>
+      <p>Tortillas de maíz con ceviche de tilapia crujiente.</p>
+      <button class="agregar-carrito" data-nombre="Tacos de pescado" data-precio="870">Agregar al carrito</button>
+    </div>
+
+    <div class="producto-card">
+      <img src="imagenes/Cordero-asado-a-la-barbacoa.jpg" alt="Paletilla de Chivo">
+      <h3>Paletilla de Chivo</h3>
+      <p class="precio">RD $1270.00</p>
+      <p>Paletillas de chivo horneada a la leña.</p>
+      <button class="agregar-carrito" data-nombre="Paletilla de Chivo" data-precio="870">Agregar al carrito</button>
+    </div>
+
+    
+    <div class="producto-card">
+      <img src="imagenes/pasteles_en_hojas_11759_600.jpg" alt="Pasteles en hoja">
+      <h3>Pasteles en Hoja</h3>
+      <p class="precio">RD $970.00</p>
+      <p>Pasteles en Hoja de chivo.</p>
+      <button class="agregar-carrito" data-nombre="Pasteles en Hoja" data-precio="870">Agregar al carrito</button>
+    </div>
+
+    <div class="producto-card">
+      <img src="imagenes/parrillada-mixta.jpg" alt="parrillada-mixta">
+      <h3>parrillada mixta</h3>
+      <p class="precio">RD $1870.00</p>
+      <p> carnes de res, alitas BBQ, Yuquitas fritas, tostones, salchichas artesanales.</p>
+      <button class="agregar-carrito" data-nombre="parrillada-mixta" data-precio="870">Agregar al carrito</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="contacto" class="contacto-section">
+  <h2>📞 Contáctanos</h2>
+
+  <div class="contacto-reserva-contenedor">
+    <!-- Columna de contacto -->
+    <div class="columna-contacto">
+      <div class="contacto-info">
+        <p><strong>Teléfono:</strong> 
+          <a href="tel:+18094391007" class="contacto-link" title="Llamar al restaurante">
+            809 439 1007
+          </a>
+        </p>
+
+        <p><strong>Email:</strong> 
+          <a href="mailto:villasophiayaguate@gmail.com" class="contacto-link" title="Enviar correo">
+            villasophiayaguate@gmail.com
+          </a>
+        </p>
+
+        <p><strong>Instagram:</strong> 
+          <a href="https://www.instagram.com/lachiveriayaguate?igsh=OGNxNzFmNHFmajgw" 
+             class="contacto-link" target="_blank" title="Ir a Instagram">
+            @LaChiveriadeYaguate
+          </a>
+        </p>
+
+        <p><strong>Ubicación:</strong></p>
+        <a href="https://www.google.com/maps/place/La+Chiver%C3%ADa+de+Yaguate/@18.3409369,-70.2182085,15.77z/data=!4m6!3m5!1s0x8ea55bc37629cfd7:0x5d1c8f7e19e1ade4!8m2!3d18.3420086!4d-70.2129619!16s%2Fg%2F11pdmyprh5?entry=ttu&g_ep=EgoyMDI1MDczMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Ver en Google Maps">
+          <img src="imagenes/images (4).jpeg" alt="Ver ubicación en Google Maps" style="width: 100%; max-width: 250px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
+      </div>
+    </div>
+
+    <!-- Columna de reserva -->
+    <div class="columna-reserva">
+      <h3>📅 Reservar mesa</h3>
+      <form id="form-reserva" action="https://formsubmit.co/villasophiayaguate@gmail.com" method="POST">
+        <input type="text" name="cliente" placeholder="Tu nombre" required>
+        <input type="date" name="fecha" required>
+        <input type="number" name="personas" placeholder="Cantidad de personas" min="1" max="20" required>
+        <input type="time" name="hora" required>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://tuweb.com/gracias.html">
+        <button type="submit">Reservar ahora 🗓️</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Formulario de contacto centrado al final -->
+  <div class="formulario-centralizado">
+    <h3>📬 Envíanos un mensaje</h3>
+    <form class="contacto-form" action="https://formsubmit.co/villasophiayaguate@gmail.com" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+      <input type="text" name="contacto" placeholder="Correo electrónico o número de teléfono" required>
+      <textarea name="sugerencia" placeholder="¿Alguna sugerencia o comentario?" required></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://tuweb.com/gracias.html">
+      <button type="submit" class="boton-animado">Enviar mensaje ✉️</button>
+    </form>
+  </div>
+</section>
+
+
+<div id="carrito-flotante">
+  <h4>🛒 Carrito</h4>
+  <ul id="lista-carrito"></ul>
+  <p><strong>Total:</strong> RD $<span id="total">0.00</span></p>
+  <button id="pagar-btn">Pagar ahora</button>
+
+  <form id="form-pago" style="display: none; margin-top: 15px;">
+    <input type="text" placeholder="Número de tarjeta" required pattern="\d{16}" maxlength="16">
+    <input type="text" placeholder="MM/AA" required pattern="\d{2}/\d{2}" maxlength="5">
+    <input type="text" placeholder="CVV" required pattern="\d{3}" maxlength="3">
+    <button type="submit" class="btn-confirmar">Confirmar pago</button>
+  </form>
+</div>
+
+<script>
+  let total = 0;
+  const carritoLista = document.getElementById('lista-carrito');
+  const totalElemento = document.getElementById('total');
+  const formPago = document.getElementById('form-pago');
+  const botonPagar = document.getElementById('pagar-btn');
+
+  function actualizarTotal() {
+    const precios = document.querySelectorAll('#lista-carrito li span[data-precio]');
+    total = 0;
+    precios.forEach(span => {
+      total += parseFloat(span.dataset.precio);
+    });
+    totalElemento.textContent = total.toFixed(2);
+  }
+
+  function eliminarProducto(event) {
+    const item = event.target.closest('li');
+    item.remove();
+    actualizarTotal();
+  }
+
+  document.querySelectorAll('.agregar-carrito').forEach(boton => {
+    boton.addEventListener('click', () => {
+      const nombre = boton.dataset.nombre;
+      const precio = parseFloat(boton.dataset.precio);
+      const li = document.createElement('li');
+      li.innerHTML = `
+        ${nombre} - RD $<span data-precio="${precio}">${precio.toFixed(2)}</span>
+        <button class="eliminar-producto">x</button>
+      `;
+      li.querySelector('.eliminar-producto').addEventListener('click', eliminarProducto);
+      carritoLista.appendChild(li);
+      actualizarTotal();
+    });
+  });
+
+  botonPagar.addEventListener('click', () => {
+    formPago.style.display = 'block';
+  });
+
+  formPago.addEventListener('submit', e => {
+    e.preventDefault();
+    alert('Pago realizado correctamente. ¡Gracias por tu compra!');
+    formPago.reset();
+    formPago.style.display = 'none';
+    carritoLista.innerHTML = '';
+    actualizarTotal();
+  });
+</script>
+
+</body>
+</html>
